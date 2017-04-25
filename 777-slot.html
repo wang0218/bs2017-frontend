@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Temperature convert</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .row-with-gap {
+            margin-bottom: 20px;
+        }
+        
+        .img-responsive.active {
+            border: solid 5px red;
+        }
+        
+        .img-responsive {
+            width: 60px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Export</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item</a></li>
+                    <li><a href="">Nav item again</a></li>
+                    <li><a href="">One more nav</a></li>
+                    <li><a href="">Another nav item</a></li>
+                    <li><a href="">More navigation</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item again</a></li>
+                    <li><a href="">One more nav</a></li>
+                    <li><a href="">Another nav item</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+                <div class="row row-with-gap">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i1" src="./image/images.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i2" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i3" src="./image/images.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i4" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i5" src="./image/images4.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i6" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i7" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i8" src="./image/images.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i9" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i10" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i11" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i12" src="./image/images4.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+                <div class="row row-with-gap">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i32" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-offset-10 col-xs-1 col-sm-offset-10 col-sm-1 col-md-offset-10 col-md-1 col-lg-offset-10 col-lg-1">
+                        <img id="i13" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+
+
+                </div>
+                <div class="row row-with-gap">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i31" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-offset-2 col-xs-1 col-sm-offset-2 col-sm-1 col-md-offset-2 col-md-1 col-lg-offset-2 col-lg-1">
+                        <img id="p1" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <img id="p2" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <img id="p3" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <img id="p4" src="./image/images4.jpg" class="img-responsive" alt="Image">
+                    </div>
+
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <img id="p5" src="./image/images.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-offset-3 col-xs-1 col-sm-offset-3 col-sm-1 col-md-offset-3 col-md-1 col-lg-offset-3 col-lg-1">
+                        <img id="i14" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+
+
+                <div class="row row-with-gap">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i30" src="./image/images4.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-offset-2 col-xs-1 col-sm-offset-2 col-sm-1 col-md-offset-2 col-md-1 col-lg-offset-2 col-lg-1">
+                        <input id="a1" type="text" class="form-control" placeholder="x1" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <input id="a2" type="text" class="form-control" placeholder="x0" aria-describedby="basic-addon1">
+                    </div>
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <input id="a3" type="text" class="form-control" placeholder="x1" aria-describedby="basic-addon1">
+                    </div>
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <input id="a4" type="text" class="form-control" placeholder="x4" aria-describedby="basic-addon1">
+                    </div>
+                    <div class=" col-xs-1  col-sm-1  col-md-1  col-lg-1">
+                        <input id="a5" type="text" class="form-control" placeholder="x2" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="col-xs-offset-3 col-xs-1 col-sm-offset-3 col-sm-1 col-md-offset-3 col-md-1 col-lg-offset-3 col-lg-1">
+                        <img id="i15" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+
+
+                </div>
+                <div class="row row-with-gap">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i29" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-1 col-sm-offset-1 col-sm-1 col-md-offset-1 col-md-1 col-lg-offset-1 col-lg-1">
+
+                    </div>
+                    <div class=" col-xs-5  col-sm-5  col-md-5  col-lg-5">
+                        <input id="a6" type="text" class="form-control" placeholder="0" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="col-xs-offset-3 col-xs-1 col-sm-offset-3 col-sm-1 col-md-offset-3 col-md-1 col-lg-offset-3 col-lg-1">
+                        <img id="i16" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+                <div class="row row-with-gap">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i28" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i27" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i26" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i25" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i24" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i23" src="./image/images4.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i22" src="./image/images 3.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i21" src="./image/images 2.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i20" src="./image/images.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i19" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i18" src="./image/images4.jpg" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                        <img id="i17" src="./image/images 1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <button id="go" type="button" class="btn btn-primary btn-block ">Go!</button>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <button id="clear" type="button" class="btn btn-primary btn-block ">重新開始</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+    <script src="scripts/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <script>
+       
+        var bricks = [];
+        var currentBrick = 0;
+        var forwardSteps = 0;
+
+        function init() {
+            var n = 0;
+
+            while (true) {
+                ++n;
+                var brick = document.getElementById("i" + n);
+
+                if (!brick) {
+                    break;
+                }
+
+                // brick.src = "https://placehold.it/200?text=" + brick.id;
+                bricks.push(brick);
+            }
+
+            document.getElementById("go").onclick = function () {
+                forwardSteps = (bricks.length * 5);
+                forwardSteps += Math.floor(Math.random() * bricks.length);
+                  
+                setTimeout(forwardBrick, 50)
+            }
+
+            document.getElementById("clear").onclick=function(){
+             a1.value="";
+             a2.value="";
+             a3.value="";
+             a4.value="";
+             a5.value="";
+             a6.value="";
+
+            }
+        }
+
+        function forwardBrick() {
+            bricks[currentBrick].className = "img-responsive";
+
+            currentBrick++;
+
+            if (currentBrick >= bricks.length) {
+                currentBrick = 0;
+            }
+
+            bricks[currentBrick].className = "img-responsive active";
+           forwardSteps--;
+            if (forwardSteps > 0) {
+                setTimeout(forwardBrick, 20);
+            }
+               var a1=document.getElementById("a1");
+                var a2=document.getElementById("a2");
+                var a3=document.getElementById("a3");
+                var a4=document.getElementById("a4");
+                var a5=document.getElementById("a5");
+                var a6=document.getElementById("a6");
+                var a=0,b=0,c=0,d=0,e=0;
+               var result=0;
+               if(forwardSteps==0){
+                if(currentBrick==0 || currentBrick==2 || currentBrick==7 || currentBrick==19){
+                   
+                    a++;
+                    // 胡迪*2
+                }else if(currentBrick==1 || currentBrick==6  || currentBrick==9 || currentBrick==13  
+                || currentBrick==14 || currentBrick==16  || currentBrick==18  || currentBrick==24  || 
+                currentBrick==27  || currentBrick==31){
+                    b++;
+                    // 三眼*1
+                }else if(currentBrick==3 || currentBrick==5 || currentBrick==10 || currentBrick==12 || currentBrick==15 || currentBrick==21 || currentBrick==25 ){
+                    c++;
+                    // 熊抱*1
+                }else if(currentBrick==4 || currentBrick==11 || currentBrick==17 || currentBrick==22 || currentBrick==29){
+                   d++;
+                //   翠絲*4
+                }
+                else if(currentBrick==8 || currentBrick==20 || currentBrick==23 || currentBrick==26 || currentBrick==28 || currentBrick==30){
+                    e++;
+                    // 恐龍*0
+                }
+                 
+                 result=a1.value*a*2+a2.value*b*1+a3.value*c*1+a4.value*d*4+a5.value*e*0;
+                a6.value=result;
+                }
+       
+               
+        }
+    
+
+        init();
+    </script>
+</body>
+
+</html>
